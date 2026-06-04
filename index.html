@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAGESH.L :: Portfolio OS</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Bebas+Neue&family=Oxanium:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════
+     BOOT SCREEN
+════════════════════════════════════════════════════ -->
+<div id="boot-screen">
+  <div class="boot-logo glitch" data-text="MAGESH.L">MAGESH.L</div>
+  <div class="boot-lines" id="boot-lines"></div>
+  <div class="boot-bar-wrap"><div class="boot-bar" id="boot-bar"></div></div>
+</div>
+
+<!-- ════════════════════════════════════════════════════
+     TOPBAR
+════════════════════════════════════════════════════ -->
+<header id="topbar">
+  <div class="topbar-left">
+    <div class="topbar-brand">MAGESH_OS</div>
+    <div class="topbar-path">~/portfolio/<span id="current-path">about</span></div>
+  </div>
+  <div class="topbar-right">
+    <span><span class="status-dot"></span> ONLINE</span>
+    <span>UPTIME: 99.97%</span>
+    <span class="topbar-time" id="clock">--:--:--</span>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════════════════
+     SIDEBAR
+════════════════════════════════════════════════════ -->
+<nav id="sidebar">
+  <div class="sidebar-section-label">// NAVIGATION</div>
+
+  <div class="nav-item active" data-section="about" onclick="navigate('about')">
+    <span class="nav-icon">▸</span> ABOUT
+    <span class="nav-num">01</span>
+  </div>
+  <div class="nav-item" data-section="skills" onclick="navigate('skills')">
+    <span class="nav-icon">▸</span> SKILLS
+    <span class="nav-num">02</span>
+  </div>
+  <div class="nav-item" data-section="experience" onclick="navigate('experience')">
+    <span class="nav-icon">▸</span> EXPERIENCE
+    <span class="nav-num">03</span>
+  </div>
+  <div class="nav-item" data-section="education" onclick="navigate('education')">
+    <span class="nav-icon">▸</span> EDUCATION
+    <span class="nav-num">04</span>
+  </div>
+  <div class="nav-item" data-section="publications" onclick="navigate('publications')">
+    <span class="nav-icon">▸</span> PUBLICATIONS
+    <span class="nav-num">05</span>
+  </div>
+  <div class="nav-item" data-section="patents" onclick="navigate('patents')">
+    <span class="nav-icon">▸</span> PATENTS
+    <span class="nav-num">06</span>
+  </div>
+  <div class="nav-item" data-section="certifications" onclick="navigate('certifications')">
+    <span class="nav-icon">▸</span> CERTS
+    <span class="nav-num">07</span>
+  </div>
+  <div class="nav-item" data-section="terminal" onclick="navigate('terminal')">
+    <span class="nav-icon">▸</span> TERMINAL
+    <span class="nav-num">08</span>
+  </div>
+  <div class="nav-item" data-section="contact" onclick="navigate('contact')">
+    <span class="nav-icon">▸</span> CONTACT
+    <span class="nav-num">09</span>
+  </div>
+
+  <div class="sidebar-footer">
+    <div style="color:var(--grey-mid); margin-bottom:0.25rem;">// SYSTEM</div>
+    <div>NODE: magesh-l</div>
+    <div>ENV: portfolio-v1.0</div>
+    <div>API: <span id="api-indicator" style="color:var(--amber)">CHECKING...</span></div>
+    <div style="margin-top:0.5rem; color:var(--grey-dark);">© 2025 Magesh.L</div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════════ -->
+<main id="main">
+
+  <!-- ── ABOUT ──────────────────────────────────────────── -->
+  <section id="sec-about" class="section active">
+    <div class="section-header">
+      <h1 class="section-title">ABOUT</h1>
+      <span class="section-cmd">cat about.md</span>
+    </div>
+
+    <div class="hero-grid">
+      <!-- Left: Bio -->
+      <div>
+        <div class="hero-name glitch" data-text="MAGESH">
+          <span>MAGESH</span>.L
+        </div>
+        <div class="hero-role">CSE STUDENT // AI & DATA ANALYTICS RESEARCHER</div>
+        <div class="hero-tags">
+          <span class="tag tag-green">Quantum Computing</span>
+          <span class="tag tag-cyan">Patent Holder</span>
+          <span class="tag tag-amber">CSI Vice President</span>
+          <span class="tag tag-green">AI Researcher</span>
+          <span class="tag tag-cyan">Data Analytics</span>
+          <span class="tag tag-amber">Open Innovation</span>
+        </div>
+        <p class="hero-summary" id="hero-summary-text">
+          BE student in Computer Science and Engineering at Karpaga Vinayaga College of Engineering and Technology. Passionate about technology, data analytics, AI research, and quantum computing. Active patent holder and CSI Vice President pushing boundaries in EdTech and AI research.
+        </p>
+
+        <div class="divider"></div>
+
+        <ul class="hero-contact-list">
+          <li><span class="label">📍 LOCATION</span> Madurantakam, Tamil Nadu, India</li>
+          <li><span class="label">📱 MOBILE</span> <a href="tel:9094854477">+91 9094854477</a></li>
+          <li><span class="label">✉ EMAIL</span> <a href="mailto:magimagesh333666@gmail.com">magimagesh333666@gmail.com</a></li>
+          <li><span class="label">🔗 LINKEDIN</span> <a href="https://www.linkedin.com/in/magesh1718" target="_blank">linkedin.com/in/magesh1718</a></li>
+          <li><span class="label">🌐 LANG</span> English · Tamil</li>
+        </ul>
+      </div>
+
+      <!-- Right: Stats Panel -->
+      <div>
+        <div class="stats-panel">
+          <div class="stats-panel-title">PROCESS_MONITOR — magesh.profile</div>
+          <div class="stat-row"><span class="stat-label">STATUS</span><span class="stat-value green">ONLINE ●</span></div>
+          <div class="stat-row"><span class="stat-label">ROLE</span><span class="stat-value cyan">CSI VICE PRESIDENT</span></div>
+          <div class="stat-row"><span class="stat-label">PATENTS</span><span class="stat-value amber">01 GRANTED</span></div>
+          <div class="stat-row"><span class="stat-label">PUBLICATIONS</span><span class="stat-value green">02</span></div>
+          <div class="stat-row"><span class="stat-label">CERTIFICATIONS</span><span class="stat-value cyan">02</span></div>
+          <div class="stat-row"><span class="stat-label">SKILLS</span><span class="stat-value green">09 INDEXED</span></div>
+          <div class="stat-row"><span class="stat-label">INSTITUTION</span><span class="stat-value amber">KVCET</span></div>
+          <div class="stat-row"><span class="stat-label">BATCH</span><span class="stat-value cyan">2024–2028</span></div>
+          <div class="stat-row"><span class="stat-label">FOCUS</span><span class="stat-value green">AI · QC · IP</span></div>
+
+          <div class="activity-bar">
+            <div class="activity-bar-title">// RESEARCH ACTIVITY</div>
+            <div class="activity-grid" id="activity-grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ──────────────────────────────────────────── -->
+  <section id="sec-skills" class="section">
+    <div class="section-header">
+      <h1 class="section-title">SKILLS</h1>
+      <span class="section-cmd">ls -la skills/ | sort -k5 -n</span>
+    </div>
+    <div id="skills-container" class="skills-grid"></div>
+  </section>
+
+  <!-- ── EXPERIENCE ──────────────────────────────────────── -->
+  <section id="sec-experience" class="section">
+    <div class="section-header">
+      <h1 class="section-title">EXPERIENCE</h1>
+      <span class="section-cmd">cat experience/*.json</span>
+    </div>
+    <div id="experience-container"></div>
+  </section>
+
+  <!-- ── EDUCATION ───────────────────────────────────────── -->
+  <section id="sec-education" class="section">
+    <div class="section-header">
+      <h1 class="section-title">EDUCATION</h1>
+      <span class="section-cmd">grep -r "degree" ./education/</span>
+    </div>
+    <div id="education-container"></div>
+  </section>
+
+  <!-- ── PUBLICATIONS ─────────────────────────────────────── -->
+  <section id="sec-publications" class="section">
+    <div class="section-header">
+      <h1 class="section-title">PUBLICATIONS</h1>
+      <span class="section-cmd">find ./research/ -name "*.pub"</span>
+    </div>
+    <div id="publications-container"></div>
+  </section>
+
+  <!-- ── PATENTS ──────────────────────────────────────────── -->
+  <section id="sec-patents" class="section">
+    <div class="section-header">
+      <h1 class="section-title">PATENTS</h1>
+      <span class="section-cmd">cat ip/patents.json | jq '.[]'</span>
+    </div>
+    <div id="patents-container"></div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ───────────────────────────────────── -->
+  <section id="sec-certifications" class="section">
+    <div class="section-header">
+      <h1 class="section-title">CERTIFICATIONS</h1>
+      <span class="section-cmd">ls certs/ --sort=time</span>
+    </div>
+    <div id="certifications-container"></div>
+  </section>
+
+  <!-- ── TERMINAL ─────────────────────────────────────────── -->
+  <section id="sec-terminal" class="section">
+    <div class="section-header">
+      <h1 class="section-title">TERMINAL</h1>
+      <span class="section-cmd">bash --login</span>
+    </div>
+    <p style="font-size:0.8rem; color:var(--grey-bright); margin-bottom:1.25rem;">
+      Interactive terminal — calls the backend API. Try: <span style="color:var(--amber)">help</span>, <span style="color:var(--amber)">whoami</span>, <span style="color:var(--amber)">ls skills/</span>, <span style="color:var(--amber)">cat patent.txt</span>
+    </p>
+    <div class="terminal-window">
+      <div class="terminal-titlebar">
+        <div class="tbar-dot red"></div>
+        <div class="tbar-dot yellow"></div>
+        <div class="tbar-dot green"></div>
+        <span class="terminal-title-text">magesh@kvcet: ~/portfolio — bash</span>
+      </div>
+      <div class="terminal-body" id="term-body">
+        <div class="term-line">
+          <span class="term-output" style="color:var(--green)">MageshOS v1.7.2 — Hacker Edition</span>
+        </div>
+        <div class="term-line">
+          <span class="term-output">Type 'help' for available commands. Backend API at localhost:3000</span>
+        </div>
+        <div class="term-line" style="margin-top:0.5rem;">
+          <span class="term-output" style="color:var(--grey-mid)">──────────────────────────────────────────────</span>
+        </div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="term-input-prompt">
+          <span style="color:var(--green)">magesh</span><span style="color:var(--grey-mid)">@</span><span style="color:var(--cyan)">kvcet</span><span style="color:var(--grey-mid)">:</span><span style="color:var(--amber)">~</span><span style="color:var(--grey-bright)"> $ </span>
+        </span>
+        <input class="term-input" id="term-input" type="text" placeholder="enter command..." autocomplete="off" spellcheck="false" />
+        <button class="term-run-btn" onclick="runTermCmd()">RUN ↵</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────────────────── -->
+  <section id="sec-contact" class="section">
+    <div class="section-header">
+      <h1 class="section-title">CONTACT</h1>
+      <span class="section-cmd">POST /api/contact — initiate transmission</span>
+    </div>
+    <div class="contact-grid">
+      <!-- Form -->
+      <div>
+        <div class="form-group">
+          <label class="form-label" for="c-name">YOUR_NAME</label>
+          <input class="form-input" id="c-name" type="text" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="c-email">YOUR_EMAIL</label>
+          <input class="form-input" id="c-email" type="email" placeholder="hello@example.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="c-msg">MESSAGE_PAYLOAD</label>
+          <textarea class="form-textarea" id="c-msg" placeholder="Enter your message..."></textarea>
+        </div>
+        <button class="btn-primary" onclick="submitContact()">
+          <span>TRANSMIT_MESSAGE ↗</span>
+        </button>
+        <div class="form-response" id="form-response"></div>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <div class="contact-info-card">
+          <div class="contact-info-label">// DIRECT CHANNELS</div>
+          <div class="contact-info-row">
+            <span class="ci-icon">✉</span>
+            <a href="mailto:magimagesh333666@gmail.com">magimagesh333666@gmail.com</a>
+          </div>
+          <div class="contact-info-row">
+            <span class="ci-icon">📱</span>
+            <a href="tel:9094854477">+91 9094854477</a>
+          </div>
+          <div class="contact-info-row">
+            <span class="ci-icon">🔗</span>
+            <a href="https://www.linkedin.com/in/magesh1718" target="_blank">linkedin.com/in/magesh1718</a>
+          </div>
+          <div class="contact-info-row">
+            <span class="ci-icon">📍</span>
+            <span>Madurantakam, Tamil Nadu, India</span>
+          </div>
+        </div>
+
+        <div class="contact-info-card" style="border-color:var(--green-dim);">
+          <div class="contact-info-label">// AVAILABILITY</div>
+          <div class="contact-info-row"><span class="ci-icon" style="color:var(--green)">●</span> Open to Internships</div>
+          <div class="contact-info-row"><span class="ci-icon" style="color:var(--green)">●</span> Research Collaborations</div>
+          <div class="contact-info-row"><span class="ci-icon" style="color:var(--green)">●</span> AI / ML Projects</div>
+          <div class="contact-info-row"><span class="ci-icon" style="color:var(--amber)">◆</span> Patent Co-authoring</div>
+        </div>
+
+        <div style="background:var(--bg-panel); border:1px solid var(--bg-border); padding:1rem; font-size:0.72rem; color:var(--grey-mid); font-family:var(--font-mono);">
+          <div style="color:var(--green-dim); margin-bottom:0.4rem;">// NOTE</div>
+          <div>Contact form routes to backend API (localhost:3000). Deploy backend to enable live form submissions. Alternatively use direct channels above.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ════════════════════════════════════════════════════
+     BOTTOM STATUS BAR
+════════════════════════════════════════════════════ -->
+<div id="api-statusbar">
+  <div class="statusbar-item"><div class="dot"></div> magesh@kvcet</div>
+  <div class="statusbar-item"><div class="dot amber"></div> API: localhost:3000</div>
+  <div class="statusbar-item">UTF-8 · LF</div>
+  <div class="statusbar-item">JetBrains Mono</div>
+  <div class="statusbar-item" id="status-section">about.md</div>
+  <div class="statusbar-item" id="status-api-state" style="margin-left:auto; color:var(--amber)">API OFFLINE — using local data</div>
+</div>
+
+<!-- ════════════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════════ -->
+<script>
+/* ─────────────────────────────────────────────────────
+   CONFIG
+───────────────────────────────────────────────────── */
+const API_BASE = 'http://localhost:3000/api';
+let apiOnline = false;
+
+/* ─────────────────────────────────────────────────────
+   LOCAL DATA (fallback when API is offline)
+───────────────────────────────────────────────────── */
+const LOCAL_DATA = {
+  skills: [
+    { id:'SK001', name:'Research Skills',      level:92, category:'CORE' },
+    { id:'SK002', name:'Intellectual Property',level:88, category:'CORE' },
+    { id:'SK003', name:'Open Innovation',      level:85, category:'CORE' },
+    { id:'SK004', name:'Data Science',         level:80, category:'TECH' },
+    { id:'SK005', name:'Machine Learning',     level:78, category:'TECH' },
+    { id:'SK006', name:'AI & Analytics',       level:82, category:'TECH' },
+    { id:'SK007', name:'Quantum Computing',    level:70, category:'EMERGING' },
+    { id:'SK008', name:'Python',               level:75, category:'LANG' },
+    { id:'SK009', name:'Project Management',   level:83, category:'SOFT' },
+  ],
+  experience: [
+    { id:'EX001', company:'SRI SAIRAM TECHNO INCUBATOR FOUNDATION', role:'Project Management Intern',         period:'December 2025',           duration:'1 month',  location:'Tambaram', type:'INTERNSHIP' },
+    { id:'EX002', company:'upSkill Campus',                          role:'Data Science and Machine Learning', period:'Oct 2025 – Dec 2025',     duration:'3 months', location:'Remote',   type:'TRAINING' },
+  ],
+  education: [
+    { id:'ED001', institution:'Karpaga Vinayaga College of Engineering and Technology', degree:'Bachelor of Engineering – Computer Science Engineering', period:'August 2024 – April 2028', status:'IN_PROGRESS' },
+  ],
+  publications: [
+    { id:'PB001', title:'E-Waste Management Through Innovative Coding Solutions', type:'RESEARCH', status:'PUBLISHED' },
+    { id:'PB002', title:'The Electric Revolution',                                 type:'PAPER',    status:'PUBLISHED' },
+  ],
+  patents: [
+    { id:'PT001', title:'Categorised Career Guidance Using Digital Platform for Educational Augmentation – Computer Science', status:'GRANTED', field:'EdTech / AI' },
+  ],
+  certifications: [
+    { id:'CE001', name:'World Entrepreneurship Day Certificate',              issuer:'WED',        year:2025 },
+    { id:'CE002', name:'Certificate of Presentation – The Electric Revolution', issuer:'Conference', year:2025 },
+  ],
+  terminal: {
+    commands: [
+      { cmd:'whoami',         response:'magesh_l :: CSE Student | Researcher | Patent Holder' },
+      { cmd:'ls skills/',     response:'research/  ML/  AI/  quantum/  ip/  innovation/' },
+      { cmd:'cat patent.txt', response:'Patent: Career Guidance via Digital Platform [GRANTED]' },
+      { cmd:'ping linkedin.com', response:'64 bytes from linkedin.com: seq=0 ttl=64 time=1.2ms — CONNECTED' },
+      { cmd:'status --system', response:'All systems nominal. Ambition: OVERCLOCKED. Caffeine: CRITICAL.' },
+      { cmd:'help',           response:'Available: whoami | ls skills/ | cat patent.txt | ping linkedin.com | status --system | clear | pwd | date | uname' },
+      { cmd:'pwd',            response:'/home/magesh/portfolio' },
+      { cmd:'date',           response: new Date().toString() },
+      { cmd:'uname',          response:'MageshOS v1.7.2 (Tamil Nadu) #AI-RESEARCH SMP' },
+    ]
+  }
+};
+
+/* ─────────────────────────────────────────────────────
+   BOOT SEQUENCE
+───────────────────────────────────────────────────── */
+const bootMessages = [
+  { text:'Initializing kernel... MageshOS v1.7.2', cls:'ok', delay:200 },
+  { text:'Loading AI research modules...', cls:'ok', delay:400 },
+  { text:'Mounting /dev/patent0... CATEGORISED_CAREER_GUIDANCE', cls:'ok', delay:600 },
+  { text:'Quantum subsystem: EXPERIMENTAL', cls:'warn', delay:800 },
+  { text:'CSI Vice President privileges: LOADED', cls:'ok', delay:1000 },
+  { text:'Connecting to portfolio API at localhost:3000...', cls:'', delay:1200 },
+  { text:'Rendering UI components...', cls:'ok', delay:1400 },
+  { text:'All systems operational. Welcome, Visitor.', cls:'ok', delay:1600 },
+];
+
+function runBoot() {
+  const container = document.getElementById('boot-lines');
+  const bar = document.getElementById('boot-bar');
+  
+  bootMessages.forEach((msg, i) => {
+    setTimeout(() => {
+      const line = document.createElement('div');
+      line.className = `boot-line ${msg.cls}`;
+      line.textContent = `[${String(i+1).padStart(2,'0')}] ${msg.text}`;
+      line.style.animationDelay = '0s';
+      container.appendChild(line);
+    }, msg.delay);
+  });
+
+  setTimeout(() => { bar.style.width = '100%'; }, 300);
+
+  setTimeout(() => {
+    document.getElementById('boot-screen').classList.add('hidden');
+    initApp();
+  }, 2600);
+}
+
+/* ─────────────────────────────────────────────────────
+   INIT
+───────────────────────────────────────────────────── */
+async function initApp() {
+  startClock();
+  generateActivityGrid();
+  await checkApi();
+  renderSkills();
+  renderExperience();
+  renderEducation();
+  renderPublications();
+  renderPatents();
+  renderCertifications();
+  animateSkillBars();
+}
+
+/* ─────────────────────────────────────────────────────
+   API CHECK
+───────────────────────────────────────────────────── */
+async function checkApi() {
+  try {
+    const res = await fetch(`${API_BASE}/ping`, { signal: AbortSignal.timeout(2000) });
+    if (res.ok) {
+      apiOnline = true;
+      document.getElementById('api-indicator').textContent = 'ONLINE';
+      document.getElementById('api-indicator').style.color = 'var(--green)';
+      document.getElementById('status-api-state').textContent = 'API ONLINE — localhost:3000';
+      document.getElementById('status-api-state').style.color = 'var(--green)';
+    }
+  } catch {
+    apiOnline = false;
+    document.getElementById('api-indicator').textContent = 'OFFLINE';
+    document.getElementById('api-indicator').style.color = 'var(--amber)';
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   CLOCK
+───────────────────────────────────────────────────── */
+function startClock() {
+  function tick() {
+    const now = new Date();
+    document.getElementById('clock').textContent =
+      now.toLocaleTimeString('en-IN', { hour12:false });
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+
+/* ─────────────────────────────────────────────────────
+   NAVIGATION
+───────────────────────────────────────────────────── */
+function navigate(section) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById(`sec-${section}`).classList.add('active');
+  document.querySelector(`[data-section="${section}"]`).classList.add('active');
+  document.getElementById('current-path').textContent = section;
+  document.getElementById('status-section').textContent = `${section}.md`;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Re-animate skill bars on navigate
+  if (section === 'skills') setTimeout(animateSkillBars, 100);
+}
+
+/* ─────────────────────────────────────────────────────
+   ACTIVITY GRID
+───────────────────────────────────────────────────── */
+function generateActivityGrid() {
+  const grid = document.getElementById('activity-grid');
+  const levels = ['', 'l1', 'l2', 'l3', 'l4'];
+  for (let i = 0; i < 48; i++) {
+    const cell = document.createElement('div');
+    const r = Math.random();
+    cell.className = 'activity-cell ' + (r > 0.7 ? levels[4] : r > 0.5 ? levels[3] : r > 0.35 ? levels[2] : r > 0.2 ? levels[1] : '');
+    grid.appendChild(cell);
+  }
+}
+
+/* ─────────────────────────────────────────────────────
+   RENDER SKILLS
+───────────────────────────────────────────────────── */
+function renderSkills() {
+  const container = document.getElementById('skills-container');
+  const skills = LOCAL_DATA.skills;
+
+  const catColor = { CORE:'green', TECH:'cyan', EMERGING:'amber', LANG:'amber', SOFT:'cyan' };
+
+  container.innerHTML = skills.map(s => `
+    <div class="skill-item">
+      <div class="skill-top">
+        <span class="skill-name">${s.name}</span>
+        <span class="skill-pct">${s.level}%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-level="${s.level}" style="width:0%"></div>
+      </div>
+      <div class="skill-cat">
+        <span class="badge badge-${catColor[s.category] || 'green'}">${s.category}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function animateSkillBars() {
+  document.querySelectorAll('.skill-fill').forEach(bar => {
+    bar.style.width = bar.dataset.level + '%';
+  });
+}
+
+/* ─────────────────────────────────────────────────────
+   RENDER EXPERIENCE
+───────────────────────────────────────────────────── */
+function renderExperience() {
+  const container = document.getElementById('experience-container');
+  const exps = LOCAL_DATA.experience;
+
+  container.innerHTML = exps.map(e => `
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-id">${e.id}</div>
+          <div class="card-title">${e.company}</div>
+          <div class="card-subtitle">${e.role}</div>
+        </div>
+        <span class="badge ${e.type === 'INTERNSHIP' ? 'badge-green' : 'badge-cyan'}">${e.type}</span>
+      </div>
+      <div class="card-meta">
+        <span>📅 ${e.period}</span>
+        <span>⏱ ${e.duration}</span>
+        <span>📍 ${e.location}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ─────────────────────────────────────────────────────
+   RENDER EDUCATION
+───────────────────────────────────────────────────── */
+function renderEducation() {
+  const container = document.getElementById('education-container');
+  container.innerHTML = LOCAL_DATA.education.map(e => `
+    <div class="card" style="border-color:var(--cyan-dim);">
+      <div class="card-header">
+        <div>
+          <div class="card-id">${e.id}</div>
+          <div class="card-title">${e.institution}</div>
+          <div class="card-subtitle" style="color:var(--cyan)">${e.degree}</div>
+        </div>
+        <span class="badge badge-amber">${e.status}</span>
+      </div>
+      <div class="card-meta">
+        <span>📅 ${e.period}</span>
+        <span>🎓 B.E. (CSE)</span>
+      </div>
+      <div style="margin-top:1rem; background:var(--bg-dark); border:1px solid var(--bg-border); padding:0.75rem; font-size:0.72rem; font-family:var(--font-mono); color:var(--grey-bright);">
+        <span style="color:var(--green-dim)">&gt; </span>
+        Currently in Year 1 — Specializing in AI, Data Analytics &amp; Quantum Computing research tracks.
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ─────────────────────────────────────────────────────
+   RENDER PUBLICATIONS
+───────────────────────────────────────────────────── */
+function renderPublications() {
+  const container = document.getElementById('publications-container');
+  container.innerHTML = LOCAL_DATA.publications.map(p => `
+    <div class="pub-card">
+      <div>
+        <div class="pub-card-title">${p.title}</div>
+        <div class="pub-card-type">${p.id} · ${p.type}</div>
+      </div>
+      <span class="badge badge-green">${p.status}</span>
+    </div>
+  `).join('');
+}
+
+/* ─────────────────────────────────────────────────────
+   RENDER PATENTS
+───────────────────────────────────────────────────── */
+function renderPatents() {
+  const container = document.getElementById('patents-container');
+  container.innerHTML = LOCAL_DATA.patents.map(p => `
+    <div class="patent-card">
+      <div class="patent-title">${p.title}</div>
+      <div class="patent-field">
+        <span class="badge badge-amber">${p.id}</span>
+        &nbsp; Field: ${p.field}
+      </div>
+      <div style="margin-top:1rem; font-size:0.75rem; color:var(--grey-bright); font-family:var(--font-mono);">
+        <span style="color:var(--amber-dim)">&gt; </span>Patent granted for an innovative digital platform enabling personalised, category-based career guidance for students — leveraging AI and educational data.
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ─────────────────────────────────────────────────────
+   RENDER CERTIFICATIONS
+───────────────────────────────────────────────────── */
+function renderCertifications() {
+  const container = document.getElementById('certifications-container');
+  container.innerHTML = LOCAL_DATA.certifications.map(c => `
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-id">${c.id}</div>
+          <div class="card-title">${c.name}</div>
+          <div class="card-subtitle">${c.issuer}</div>
+        </div>
+        <span class="badge badge-cyan">${c.year}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ─────────────────────────────────────────────────────
+   TERMINAL
+───────────────────────────────────────────────────── */
+const termBody = document.getElementById('term-body');
+const termInput = document.getElementById('term-input');
+const termHistory = [];
+let historyIdx = -1;
+
+termInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') runTermCmd();
+  if (e.key === 'ArrowUp') {
+    historyIdx = Math.min(historyIdx + 1, termHistory.length - 1);
+    termInput.value = termHistory[historyIdx] || '';
+  }
+  if (e.key === 'ArrowDown') {
+    historyIdx = Math.max(historyIdx - 1, -1);
+    termInput.value = historyIdx >= 0 ? termHistory[historyIdx] : '';
+  }
+});
+
+async function runTermCmd() {
+  const cmd = termInput.value.trim();
+  if (!cmd) return;
+
+  termHistory.unshift(cmd);
+  historyIdx = -1;
+
+  // Print command line
+  const cmdLine = document.createElement('div');
+  cmdLine.className = 'term-line';
+  cmdLine.innerHTML = `
+    <span class="term-prompt">
+      <span class="user">magesh</span><span class="at">@</span><span class="host">kvcet</span><span>:</span><span class="path">~</span>&nbsp;$&nbsp;
+    </span>
+    <span class="term-cmd">${escHtml(cmd)}</span>
+  `;
+  termBody.appendChild(cmdLine);
+  termInput.value = '';
+
+  // Handle clear
+  if (cmd.toLowerCase() === 'clear') {
+    termBody.innerHTML = '';
+    return;
+  }
+
+  // Try API first
+  let output = null;
+  if (apiOnline) {
+    try {
+      const res = await fetch(`${API_BASE}/terminal`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ command: cmd }),
+        signal: AbortSignal.timeout(2000)
+      });
+      const data = await res.json();
+      if (data.output === '__CLEAR__') { termBody.innerHTML = ''; return; }
+      output = data.output;
+    } catch {}
+  }
+
+  // Local fallback
+  if (!output) {
+    const known = LOCAL_DATA.terminal.commands.find(c => c.cmd.toLowerCase() === cmd.toLowerCase());
+    if (known) output = known.response;
+    else if (cmd === 'pwd') output = '/home/magesh/portfolio';
+    else if (cmd === 'date') output = new Date().toString();
+    else if (cmd === 'uname') output = 'MageshOS v1.7.2 (Tamil Nadu) #AI-RESEARCH SMP';
+    else output = `bash: ${cmd}: command not found — try 'help'`;
+  }
+
+  const outLine = document.createElement('div');
+  outLine.className = 'term-line';
+  outLine.innerHTML = `<span class="term-output">${escHtml(output)}</span>`;
+  termBody.appendChild(outLine);
+
+  // Auto-scroll
+  termBody.scrollTop = termBody.scrollHeight;
+}
+
+function escHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* ─────────────────────────────────────────────────────
+   CONTACT FORM
+───────────────────────────────────────────────────── */
+async function submitContact() {
+  const name    = document.getElementById('c-name').value.trim();
+  const email   = document.getElementById('c-email').value.trim();
+  const message = document.getElementById('c-msg').value.trim();
+  const respEl  = document.getElementById('form-response');
+
+  if (!name || !email || !message) {
+    showFormResponse('error', 'ERROR: All fields required.');
+    return;
+  }
+
+  if (apiOnline) {
+    try {
+      const res = await fetch(`${API_BASE}/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      });
+      const data = await res.json();
+      if (data.success) {
+        showFormResponse('success', `✓ TRANSMISSION SENT — ${data.message}`);
+        document.getElementById('c-name').value = '';
+        document.getElementById('c-email').value = '';
+        document.getElementById('c-msg').value = '';
+      } else {
+        showFormResponse('error', 'ERROR: ' + (data.error || 'Unknown error'));
+      }
+    } catch {
+      showFormResponse('error', 'ERROR: API offline. Please use direct channels above.');
+    }
+  } else {
+    showFormResponse('success', `✓ MESSAGE LOGGED — API offline, use direct channels to reach Magesh.`);
+  }
+}
+
+function showFormResponse(type, msg) {
+  const el = document.getElementById('form-response');
+  el.className = `form-response ${type}`;
+  el.textContent = msg;
+  el.style.display = 'block';
+  setTimeout(() => { el.style.display = 'none'; }, 6000);
+}
+
+/* ─────────────────────────────────────────────────────
+   BOOT
+───────────────────────────────────────────────────── */
+runBoot();
+</script>
+</body>
+</html>
